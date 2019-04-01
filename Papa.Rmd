@@ -1,9 +1,9 @@
 ---
-title             : "The title"
+title             : "APA Midterm"
 shorttitle        : "Title"
 
 author: 
-  - name          : "First Author"
+  - name          : "Angelina Vasquez"
     affiliation   : "1"
     corresponding : yes    # Define only one corresponding author
     address       : "Postal address"
@@ -83,6 +83,12 @@ We used `r cite_r("r-references.bib")` for all our analyses.
 
 
 # Results
+
+```{r myfig, fig.cap="This is histo"}
+a<- rnorm(100,0,1)
+hist(a)
+```
+
 
 # Discussion
 
