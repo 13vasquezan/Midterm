@@ -42,7 +42,7 @@ abstract: |
 keywords          : "keywords"
 wordcount         : "X"
 
-bibliography      : ["r-references.bib"]
+bibliography      : ["r-references.bib"] #make new r script with my ref.bib in bracket,add""ref.bib" click bibtex version to add to script in code
 
 floatsintext      : no
 figurelist        : no
@@ -81,8 +81,11 @@ We report how we determined our sample size, all data exclusions (if any), all m
 ## Data analysis
 We used `r cite_r("r-references.bib")` for all our analyses.
 
+###power anaylisis probablity finding something given it is there how big is it how many subjects there is the pwr package to do analysis 
+
 
 # Results
+###apa print function will make a table of the data you ran(anova table) if you write something and then put`r write something other tick-that treats as r code some this test significant tick r F value p value tick
 
 ```{r myfig, fig.cap="This is histo"}
 a<- rnorm(100,0,1)
