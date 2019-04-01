@@ -81,7 +81,7 @@ We report how we determined our sample size, all data exclusions (if any), all m
 ## Data analysis
 We used `r cite_r("r-references.bib")` for all our analyses.
 
-###power anaylisis probablity finding something given it is there how big is it how many subjects there is the pwr package to do analysis 
+###power anaylisis probablity finding something given it is there how big is it how many subjects there is the pwr package to do analysis go to github simulation presentations for power analysis
 
 
 # Results
