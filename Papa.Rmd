@@ -85,7 +85,7 @@ We used `r cite_r("r-references.bib")` for all our analyses.
 
 
 # Results
-###apa print function will make a table of the data you ran(anova table) if you write something and then put`r write something other tick-that treats as r code some this test significant tick r F value p value tick
+###apa print function will make a table of the data you ran(anova table) if you write something and then put`r write something other tick-that treats as r code some this test significant tick r F value p value tick-----a=1,2,3,sapply(a,fun=function(x)return (x+1))
 
 ```{r myfig, fig.cap="This is histo"}
 a<- rnorm(100,0,1)
