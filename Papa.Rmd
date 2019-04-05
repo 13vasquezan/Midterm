@@ -59,6 +59,13 @@ output            : papaja::apa6_pdf
 
 ```{r setup, include = FALSE}
 library("papaja")
+library(data.table)
+
+all_data <- fread("https://raw.githubusercontent.com/CrumpLab/statisticsLab/master/data/MehrSongSpelke2016.csv")
+library(summarytools)
+view(dfSummary(all_data))
+library(dplyr)
+experiment_one <- all_data %>% filter(exp1==1)
 ```
 
 ```{r analysis-preferences}
