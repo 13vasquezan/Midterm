@@ -8,14 +8,17 @@ author:
     corresponding : yes    # Define only one corresponding author
     address       : "Postal address"
     email         : "my@email.com"
-  - name          : "Ernst-August Doelle"
+  - name          : ""
     affiliation   : "1,2"
 
 affiliation:
   - id            : "1"
-    institution   : "Wilhelm-Wundt-University"
+    institution   : "Brooklyn College"
   - id            : "2"
-    institution   : "Konstanz Business School"
+    institution   : ""
+
+
+
 
 authornote: |
   Add complete departmental affiliations for each author here. Each new line herein must be indented, like this line.
@@ -87,6 +90,19 @@ We report how we determined our sample size, all data exclusions (if any), all m
 
 ## Data analysis
 We used `r cite_r("r-references.bib")` for all our analyses.
+```{r}
+baseline <- experiment_one$Baseline_Proportion_Gaze_to_Singer
+mean(baseline)
+sd(baseline)
+hist(baseline)
+```
+T-test analysis
+```{r}
+t.test(baseline, mu=.5)
+```
+So, there we have it. We did a one-sample t-test. Here’s how you would report it, t(31) = .67, p = .505. Or, we might say something like:
+
+During the baseline condition, the mean proportion looking time toward the singer was .52, and was not significantly different from .5, according to a one-sample test, t(31) = .67, p = .505.
 
 ###power anaylisis probablity finding something given it is there how big is it how many subjects there is the pwr package to do analysis go to github simulation presentations for power analysis
 
@@ -106,8 +122,10 @@ hist(a)
 \newpage
 
 # References
+Mehr, S. A., Song. L. A., & Spelke, E. S. (2016). For 5-month-old infants, melodies are social. Psychological Science, 27, 486-501.
 ```{r create_r-references}
 r_refs(file = "r-references.bib")
+
 ```
 
 \begingroup
