@@ -28,17 +28,7 @@ authornote: |
 abstract: |
   Five-month old infants listened to songs sung by their parent, a toy,or someone unfamiliar for one to two week period. These songs had the same lyrics and rhythms. However, the melodies were different. The researchers tested the infants selected attention when a random person sang the song they were familiar with and the song they were not. The results indicated that infants paid more attention to the song they were familiar with, and that exposure time predicted preference time. This suggests that melodies may carry social meanings for infants.    
   
-  Two to three sentences of **more detailed background**, comprehensible  to scientists in related disciplines.
-  
-  One sentence clearly stating the **general problem** being addressed by  this particular study.
-  
-  One sentence summarizing the main result (with the words "**here we show**" or their equivalent).
-  
-  Two or three sentences explaining what the **main result** reveals in direct comparison to what was thought to be the case previously, or how the  main result adds to previous knowledge.
-  
-  One or two sentences to put the results into a more **general context**.
-  
-  Two or three sentences to provide a **broader perspective**, readily comprehensible to a scientist in any discipline.
+
   
   <!-- https://tinyurl.com/ybremelq -->
   
@@ -83,10 +73,13 @@ knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
 We report how we determined our sample size, all data exclusions (if any), all manipulations, and all measures in the study. <!-- 21-word solution (Simmons, Nelson & Simonsohn, 2012; retrieved from http://ssrn.com/abstract=2160588) -->
 
 ## Participants
+The participants were 32 infants and both their parents. However, only one of the paretns was active in their participation.
 
 ## Material
+The materials for this study consisted of two adpated versions of lullabies from folk collections.These were also provided through a website with the recordings of the songs and printed versions of the lyrics.
 
 ## Procedure
+
 
 ## Data analysis
 We used `r cite_r("r-references.bib")` for all our analyses.
