@@ -21,7 +21,7 @@ affiliation:
 
 
 authornote: |
-  Add complete departmental affiliations for each author here. Each new line herein must be indented, like this line.
+  A Brooklyn College Graduate student. Also, a John Jay College research assistant.
 
   Enter author note here.
 
@@ -45,7 +45,7 @@ abstract: |
 keywords          : "keywords"
 wordcount         : "X"
 
-bibliography      : ["r-references.bib"] #make new r script with my ref.bib in bracket,add""ref.bib" click bibtex version to add to script in code
+bibliography      : ["r-references.bib","CopyOfRef.bib"] #make new r script with my ref.bib in bracket,add""ref.bib" click bibtex version to add to script in code
 
 floatsintext      : no
 figurelist        : no
@@ -122,7 +122,7 @@ hist(a)
 \newpage
 
 # References
-Mehr, S. A., Song. L. A., & Spelke, E. S. (2016). For 5-month-old infants, melodies are social. Psychological Science, 27, 486-501.
+Mehr, S. A., Song, L. A., & Spelke, E. S. (2016). For 5-month-old infants, melodies are social. Psychological Science, 27(4), 486-501.
 ```{r create_r-references}
 r_refs(file = "r-references.bib")
 
