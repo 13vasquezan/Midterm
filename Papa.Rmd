@@ -76,10 +76,12 @@ We report how we determined our sample size, all data exclusions (if any), all m
 The participants were 32 infants and both their parents. However, only one of the paretns was active in their participation.
 
 ## Material
-The materials for this study consisted of two adpated versions of lullabies from folk collections.These were also provided through a website with the recordings of the songs and printed versions of the lyrics.
+The materials for this study consisted of two adpated versions of lullabies from folk collections.These were also provided through a website with the recordings of the songs and printed versions of the lyrics. The advanced measures of music audiation assesment was also used.
 
 ## Procedure
+During the first lab visit, parents were randomly assigned to either music condition. Once they got their condition with the song they would have to sing, they were given a music lesson. Parents were also instructed to visit a website that had the recording of the song so they could practice. Lastly, parents completed an standard assesment  for music perception skill.
 
+Everyday, participants were emailed a survey to assess the number of times infant heard the song.
 
 ## Data analysis
 We used `r cite_r("r-references.bib")` for all our analyses.
