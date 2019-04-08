@@ -1,6 +1,6 @@
 ---
 title             : "APA Midterm"
-shorttitle        : "Title"
+shorttitle        : "Music Memory"
 
 author: 
   - name          : "Angelina Vasquez"
@@ -26,7 +26,7 @@ authornote: |
   Enter author note here.
 
 abstract: |
-  One or two sentences providing a **basic introduction** to the field,  comprehensible to a scientist in any discipline.
+  Five-month old infants listened to songs sung by their parent, a toy,or someone unfamiliar for one to two week period. These songs had the same lyrics and rhythms. However, the melodies were different. The researchers tested the infants selected attention when a random person sang the song they were familiar with and the song they were not. The results indicated that infants paid more attention to the song they were familiar with, and that exposure time predicted preference time. This suggests that melodies may carry social meanings for infants.    
   
   Two to three sentences of **more detailed background**, comprehensible  to scientists in related disciplines.
   
@@ -42,7 +42,7 @@ abstract: |
   
   <!-- https://tinyurl.com/ybremelq -->
   
-keywords          : "keywords"
+keywords          : "music,social cognition,memory,infant development,open data"
 wordcount         : "X"
 
 bibliography      : ["r-references.bib","CopyOfRef.bib"] #make new r script with my ref.bib in bracket,add""ref.bib" click bibtex version to add to script in code
