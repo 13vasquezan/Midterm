@@ -85,7 +85,7 @@ Everyday, participants were emailed a survey to assess the number of times the i
 
 On the last day of the study, the infants were given an attention test. They sat on their parent's lap while they watched a projection screen with another two people  on it singing the familar song and unfamilar song.The first were presented with vidoe recordings of the individuals smiling. Then they viewed the recordings with the individuals singing. Lastly, the viewed the the first recording again of the smiling individuals.
 
-In experiment two, the overal procedure was replicated fro, experiment 1. However, instead of having the parent sing the song to them duriing the study, they had a toy with a reocding of the song sing it during the study.
+In experiment two, the overal procedure was replicated from, experiment 1. However, instead of having the parent sing the song to them duriing the study, they had a toy with a reocding of the song sing it during the study.
 
 In experiment three, the overall procedure was replicated fro, experiment 1. However, instead of having the parent sing the song to them duriing the study, they had a friendly adult.
 
@@ -107,6 +107,30 @@ So, there we have it. We did a one-sample t-test. Here’s how you would report 
 During the baseline condition, the mean proportion looking time toward the singer was .52, and was not significantly different from .5, according to a one-sample test, t(31) = .67, p = .505.
 
 ###power anaylisis probablity finding something given it is there how big is it how many subjects there is the pwr package to do analysis go to github simulation presentations for power analysis
+```{r}
+library(ggplot2)
+# function to run a simulated t-test
+sim_power <- function(x){
+  A <- rnorm(n=32,mean=0, sd=1)
+  B <- rnorm(n=32,mean=(0+x), sd=1)
+  return(t.test(A,B,var.equal=TRUE)$p.value)
+}
+# vector of effect sizes
+effect_sizes <- seq(.1,2,.1)
+# run simulation for each effect size 1000 times
+power <- sapply(effect_sizes, 
+          FUN = function(x) {
+            sims <- replicate(1000,sim_power(x))
+            sim_power <- length(sims[sims<.05])/length(sims)
+            return(sim_power)})
+# combine into dataframe
+plot_df <- data.frame(effect_sizes,power)
+# plot the power curve
+ggplot(plot_df, aes(x=effect_sizes,
+                    y=power))+
+  geom_point()+
+  geom_line()
+```
 
 
 # Results
